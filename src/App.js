@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import './statedata/index'
+// index.js in statedata is a list of objects
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>State Abbreviation App</h1>
+      <hr />
+      <select>
+        <option value="1">Donuts</option>
+        <option value="2">Bagels</option>
+        <option value="3">Peach Ring</option>
+      </select>
+      <div id="div-state-abbr">
+        CA
+      </div>
     </div>
   );
 }
